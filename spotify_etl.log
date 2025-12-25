@@ -1,0 +1,263 @@
+2025-10-14 01:27:38,811 - INFO - Starting Spotify ETL Pipeline...
+2025-10-14 01:27:38,812 - INFO - Extracting data from: Projects/spotify_data/Spotify Extended Streaming History/Streaming_History_Audio_2021-2022_0.json
+2025-10-14 01:27:38,813 - ERROR - File not found: Projects/spotify_data/Spotify Extended Streaming History/Streaming_History_Audio_2021-2022_0.json
+2025-10-14 01:27:38,813 - ERROR - ETL Pipeline failed: File not found: Projects/spotify_data/Spotify Extended Streaming History/Streaming_History_Audio_2021-2022_0.json
+2025-10-14 01:28:26,436 - INFO - Starting Spotify ETL Pipeline...
+2025-10-14 01:28:26,437 - INFO - Extracting data from: Projects/spotify_data/Spotify Extended Streaming History/Streaming_History_Audio_2021-2022_0.json
+2025-10-14 01:28:26,437 - ERROR - File not found: Projects/spotify_data/Spotify Extended Streaming History/Streaming_History_Audio_2021-2022_0.json
+2025-10-14 01:28:26,437 - ERROR - ETL Pipeline failed: File not found: Projects/spotify_data/Spotify Extended Streaming History/Streaming_History_Audio_2021-2022_0.json
+2025-10-14 01:29:06,331 - INFO - Starting Spotify ETL Pipeline...
+2025-10-14 01:29:06,331 - INFO - Extracting data from: Spotify Extended Streaming History/Streaming_History_Audio_2021-2022_0.json
+2025-10-14 01:29:06,655 - INFO - Successfully extracted 15,809 records
+2025-10-14 01:29:06,655 - INFO - Columns found: ['ts', 'platform', 'ms_played', 'conn_country', 'ip_addr', 'master_metadata_track_name', 'master_metadata_album_artist_name', 'master_metadata_album_album_name', 'spotify_track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'reason_start', 'reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode']
+2025-10-14 01:29:06,655 - INFO - Starting data transformation...
+2025-10-14 01:29:06,687 - INFO - Converted ms_played to minutes_played
+2025-10-14 01:29:06,699 - INFO - Renamed 10 columns
+2025-10-14 01:29:06,757 - INFO - Added datetime features
+2025-10-14 01:29:06,762 - INFO - Added listening duration categories
+2025-10-14 01:29:06,796 - INFO - Transformation complete. Final shape: (15809, 29)
+2025-10-14 01:29:06,796 - INFO - Columns: ['timestamp', 'platform', 'milliseconds_played', 'country_code', 'ip_address', 'track_name', 'artist_name', 'album_name', 'track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'play_reason_start', 'play_reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode', 'minutes_played', 'date', 'hour', 'day_of_week', 'listening_category', 'has_complete_metadata']
+2025-10-14 01:29:06,797 - INFO - Loading data to: Projects/spotify_data/ETL/spotify_streaming_data_2021-2022.csv
+2025-10-14 01:29:07,155 - INFO - Successfully saved 15,809 records to Projects/spotify_data/ETL/spotify_streaming_data_2021-2022.csv
+2025-10-14 01:29:07,165 - INFO - ETL Pipeline completed successfully!
+2025-10-14 01:29:07,166 - INFO - Processed 15,809 records in 0.82 seconds
+2025-10-14 01:29:07,166 - INFO - Data quality rate: 100.0%
+2025-10-14 01:29:07,166 - INFO - Total listening time: 363.0 hours
+2025-10-14 01:29:48,973 - INFO - Starting Spotify ETL Pipeline...
+2025-10-14 01:29:48,973 - INFO - Extracting data from: Spotify Extended Streaming History/Streaming_History_Audio_2022_1.json
+2025-10-14 01:29:49,324 - INFO - Successfully extracted 15,863 records
+2025-10-14 01:29:49,325 - INFO - Columns found: ['ts', 'platform', 'ms_played', 'conn_country', 'ip_addr', 'master_metadata_track_name', 'master_metadata_album_artist_name', 'master_metadata_album_album_name', 'spotify_track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'reason_start', 'reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode']
+2025-10-14 01:29:49,325 - INFO - Starting data transformation...
+2025-10-14 01:29:49,331 - INFO - Converted ms_played to minutes_played
+2025-10-14 01:29:49,339 - INFO - Renamed 10 columns
+2025-10-14 01:29:49,375 - INFO - Added datetime features
+2025-10-14 01:29:49,380 - INFO - Added listening duration categories
+2025-10-14 01:29:49,411 - INFO - Transformation complete. Final shape: (15863, 29)
+2025-10-14 01:29:49,412 - INFO - Columns: ['timestamp', 'platform', 'milliseconds_played', 'country_code', 'ip_address', 'track_name', 'artist_name', 'album_name', 'track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'play_reason_start', 'play_reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode', 'minutes_played', 'date', 'hour', 'day_of_week', 'listening_category', 'has_complete_metadata']
+2025-10-14 01:29:49,412 - INFO - Loading data to: Projects/spotify_data/ETL/spotify_streaming_data_2022_1.csv
+2025-10-14 01:29:49,710 - INFO - Successfully saved 15,863 records to Projects/spotify_data/ETL/spotify_streaming_data_2022_1.csv
+2025-10-14 01:29:49,716 - INFO - ETL Pipeline completed successfully!
+2025-10-14 01:29:49,716 - INFO - Processed 15,863 records in 0.74 seconds
+2025-10-14 01:29:49,716 - INFO - Data quality rate: 100.0%
+2025-10-14 01:29:49,717 - INFO - Total listening time: 335.1 hours
+2025-10-14 01:29:59,384 - INFO - Starting Spotify ETL Pipeline...
+2025-10-14 01:29:59,385 - INFO - Extracting data from: Spotify Extended Streaming History/Streaming_History_Audio_2022_2.json
+2025-10-14 01:29:59,708 - INFO - Successfully extracted 15,747 records
+2025-10-14 01:29:59,708 - INFO - Columns found: ['ts', 'platform', 'ms_played', 'conn_country', 'ip_addr', 'master_metadata_track_name', 'master_metadata_album_artist_name', 'master_metadata_album_album_name', 'spotify_track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'reason_start', 'reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode']
+2025-10-14 01:29:59,709 - INFO - Starting data transformation...
+2025-10-14 01:29:59,717 - INFO - Converted ms_played to minutes_played
+2025-10-14 01:29:59,728 - INFO - Renamed 10 columns
+2025-10-14 01:29:59,770 - INFO - Added datetime features
+2025-10-14 01:29:59,835 - INFO - Added listening duration categories
+2025-10-14 01:29:59,877 - INFO - Transformation complete. Final shape: (15747, 29)
+2025-10-14 01:29:59,878 - INFO - Columns: ['timestamp', 'platform', 'milliseconds_played', 'country_code', 'ip_address', 'track_name', 'artist_name', 'album_name', 'track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'play_reason_start', 'play_reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode', 'minutes_played', 'date', 'hour', 'day_of_week', 'listening_category', 'has_complete_metadata']
+2025-10-14 01:29:59,879 - INFO - Loading data to: Projects/spotify_data/ETL/spotify_streaming_data_2022_2.csv
+2025-10-14 01:30:00,196 - INFO - Successfully saved 15,747 records to Projects/spotify_data/ETL/spotify_streaming_data_2022_2.csv
+2025-10-14 01:30:00,208 - INFO - ETL Pipeline completed successfully!
+2025-10-14 01:30:00,208 - INFO - Processed 15,747 records in 0.81 seconds
+2025-10-14 01:30:00,209 - INFO - Data quality rate: 100.0%
+2025-10-14 01:30:00,210 - INFO - Total listening time: 340.4 hours
+2025-10-14 01:30:21,466 - INFO - Starting Spotify ETL Pipeline...
+2025-10-14 01:30:21,467 - INFO - Extracting data from: Spotify Extended Streaming History/Streaming_History_Audio_2022-2023_3.json
+2025-10-14 01:30:21,763 - INFO - Successfully extracted 16,097 records
+2025-10-14 01:30:21,764 - INFO - Columns found: ['ts', 'platform', 'ms_played', 'conn_country', 'ip_addr', 'master_metadata_track_name', 'master_metadata_album_artist_name', 'master_metadata_album_album_name', 'spotify_track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'reason_start', 'reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode']
+2025-10-14 01:30:21,765 - INFO - Starting data transformation...
+2025-10-14 01:30:21,770 - INFO - Converted ms_played to minutes_played
+2025-10-14 01:30:21,779 - INFO - Renamed 10 columns
+2025-10-14 01:30:21,822 - INFO - Added datetime features
+2025-10-14 01:30:21,826 - INFO - Added listening duration categories
+2025-10-14 01:30:21,863 - INFO - Transformation complete. Final shape: (16097, 29)
+2025-10-14 01:30:21,863 - INFO - Columns: ['timestamp', 'platform', 'milliseconds_played', 'country_code', 'ip_address', 'track_name', 'artist_name', 'album_name', 'track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'play_reason_start', 'play_reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode', 'minutes_played', 'date', 'hour', 'day_of_week', 'listening_category', 'has_complete_metadata']
+2025-10-14 01:30:21,863 - INFO - Loading data to: Projects/spotify_data/ETL/spotify_streaming_data_2022_2.csv
+2025-10-14 01:30:22,138 - INFO - Successfully saved 16,097 records to Projects/spotify_data/ETL/spotify_streaming_data_2022_2.csv
+2025-10-14 01:30:22,147 - INFO - ETL Pipeline completed successfully!
+2025-10-14 01:30:22,148 - INFO - Processed 16,097 records in 0.67 seconds
+2025-10-14 01:30:22,148 - INFO - Data quality rate: 100.0%
+2025-10-14 01:30:22,148 - INFO - Total listening time: 562.6 hours
+2025-10-14 01:30:33,517 - INFO - Starting Spotify ETL Pipeline...
+2025-10-14 01:30:33,518 - INFO - Extracting data from: Spotify Extended Streaming History/Streaming_History_Audio_2022_2.json
+2025-10-14 01:30:33,767 - INFO - Successfully extracted 15,747 records
+2025-10-14 01:30:33,768 - INFO - Columns found: ['ts', 'platform', 'ms_played', 'conn_country', 'ip_addr', 'master_metadata_track_name', 'master_metadata_album_artist_name', 'master_metadata_album_album_name', 'spotify_track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'reason_start', 'reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode']
+2025-10-14 01:30:33,768 - INFO - Starting data transformation...
+2025-10-14 01:30:33,773 - INFO - Converted ms_played to minutes_played
+2025-10-14 01:30:33,783 - INFO - Renamed 10 columns
+2025-10-14 01:30:33,813 - INFO - Added datetime features
+2025-10-14 01:30:33,818 - INFO - Added listening duration categories
+2025-10-14 01:30:33,859 - INFO - Transformation complete. Final shape: (15747, 29)
+2025-10-14 01:30:33,859 - INFO - Columns: ['timestamp', 'platform', 'milliseconds_played', 'country_code', 'ip_address', 'track_name', 'artist_name', 'album_name', 'track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'play_reason_start', 'play_reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode', 'minutes_played', 'date', 'hour', 'day_of_week', 'listening_category', 'has_complete_metadata']
+2025-10-14 01:30:33,860 - INFO - Loading data to: Projects/spotify_data/ETL/spotify_streaming_data_2022_2.csv
+2025-10-14 01:30:34,147 - INFO - Successfully saved 15,747 records to Projects/spotify_data/ETL/spotify_streaming_data_2022_2.csv
+2025-10-14 01:30:34,162 - INFO - ETL Pipeline completed successfully!
+2025-10-14 01:30:34,163 - INFO - Processed 15,747 records in 0.63 seconds
+2025-10-14 01:30:34,165 - INFO - Data quality rate: 100.0%
+2025-10-14 01:30:34,166 - INFO - Total listening time: 340.4 hours
+2025-10-14 01:30:49,037 - INFO - Starting Spotify ETL Pipeline...
+2025-10-14 01:30:49,038 - INFO - Extracting data from: Spotify Extended Streaming History/Streaming_History_Audio_2022-2023_3.json
+2025-10-14 01:30:49,283 - INFO - Successfully extracted 16,097 records
+2025-10-14 01:30:49,284 - INFO - Columns found: ['ts', 'platform', 'ms_played', 'conn_country', 'ip_addr', 'master_metadata_track_name', 'master_metadata_album_artist_name', 'master_metadata_album_album_name', 'spotify_track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'reason_start', 'reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode']
+2025-10-14 01:30:49,285 - INFO - Starting data transformation...
+2025-10-14 01:30:49,290 - INFO - Converted ms_played to minutes_played
+2025-10-14 01:30:49,300 - INFO - Renamed 10 columns
+2025-10-14 01:30:49,347 - INFO - Added datetime features
+2025-10-14 01:30:49,352 - INFO - Added listening duration categories
+2025-10-14 01:30:49,394 - INFO - Transformation complete. Final shape: (16097, 29)
+2025-10-14 01:30:49,394 - INFO - Columns: ['timestamp', 'platform', 'milliseconds_played', 'country_code', 'ip_address', 'track_name', 'artist_name', 'album_name', 'track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'play_reason_start', 'play_reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode', 'minutes_played', 'date', 'hour', 'day_of_week', 'listening_category', 'has_complete_metadata']
+2025-10-14 01:30:49,395 - INFO - Loading data to: Projects/spotify_data/ETL/spotify_streaming_data_2022-2023_3.csv
+2025-10-14 01:30:49,679 - INFO - Successfully saved 16,097 records to Projects/spotify_data/ETL/spotify_streaming_data_2022-2023_3.csv
+2025-10-14 01:30:49,689 - INFO - ETL Pipeline completed successfully!
+2025-10-14 01:30:49,690 - INFO - Processed 16,097 records in 0.64 seconds
+2025-10-14 01:30:49,690 - INFO - Data quality rate: 100.0%
+2025-10-14 01:30:49,690 - INFO - Total listening time: 562.6 hours
+2025-10-14 01:31:09,729 - INFO - Starting Spotify ETL Pipeline...
+2025-10-14 01:31:09,729 - INFO - Extracting data from: Spotify Extended Streaming History/Streaming_History_Audio_2023_4.json
+2025-10-14 01:31:09,998 - INFO - Successfully extracted 16,133 records
+2025-10-14 01:31:09,998 - INFO - Columns found: ['ts', 'platform', 'ms_played', 'conn_country', 'ip_addr', 'master_metadata_track_name', 'master_metadata_album_artist_name', 'master_metadata_album_album_name', 'spotify_track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'reason_start', 'reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode']
+2025-10-14 01:31:09,999 - INFO - Starting data transformation...
+2025-10-14 01:31:10,004 - INFO - Converted ms_played to minutes_played
+2025-10-14 01:31:10,016 - INFO - Renamed 10 columns
+2025-10-14 01:31:10,057 - INFO - Added datetime features
+2025-10-14 01:31:10,062 - INFO - Added listening duration categories
+2025-10-14 01:31:10,112 - INFO - Transformation complete. Final shape: (16133, 29)
+2025-10-14 01:31:10,113 - INFO - Columns: ['timestamp', 'platform', 'milliseconds_played', 'country_code', 'ip_address', 'track_name', 'artist_name', 'album_name', 'track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'play_reason_start', 'play_reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode', 'minutes_played', 'date', 'hour', 'day_of_week', 'listening_category', 'has_complete_metadata']
+2025-10-14 01:31:10,113 - INFO - Loading data to: Projects/spotify_data/ETL/spotify_streaming_data_2023_4.csv
+2025-10-14 01:31:10,372 - INFO - Successfully saved 16,133 records to Projects/spotify_data/ETL/spotify_streaming_data_2023_4.csv
+2025-10-14 01:31:10,380 - INFO - ETL Pipeline completed successfully!
+2025-10-14 01:31:10,380 - INFO - Processed 16,133 records in 0.64 seconds
+2025-10-14 01:31:10,381 - INFO - Data quality rate: 100.0%
+2025-10-14 01:31:10,381 - INFO - Total listening time: 407.4 hours
+2025-10-14 01:31:48,558 - INFO - Starting Spotify ETL Pipeline...
+2025-10-14 01:31:48,559 - INFO - Extracting data from: Spotify Extended Streaming History/Streaming_History_Audio_2023-2024_5.json
+2025-10-14 01:31:48,909 - INFO - Successfully extracted 16,015 records
+2025-10-14 01:31:48,910 - INFO - Columns found: ['ts', 'platform', 'ms_played', 'conn_country', 'ip_addr', 'master_metadata_track_name', 'master_metadata_album_artist_name', 'master_metadata_album_album_name', 'spotify_track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'reason_start', 'reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode']
+2025-10-14 01:31:48,910 - INFO - Starting data transformation...
+2025-10-14 01:31:48,917 - INFO - Converted ms_played to minutes_played
+2025-10-14 01:31:48,928 - INFO - Renamed 10 columns
+2025-10-14 01:31:48,992 - INFO - Added datetime features
+2025-10-14 01:31:49,000 - INFO - Added listening duration categories
+2025-10-14 01:31:49,048 - INFO - Transformation complete. Final shape: (16015, 29)
+2025-10-14 01:31:49,049 - INFO - Columns: ['timestamp', 'platform', 'milliseconds_played', 'country_code', 'ip_address', 'track_name', 'artist_name', 'album_name', 'track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'play_reason_start', 'play_reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode', 'minutes_played', 'date', 'hour', 'day_of_week', 'listening_category', 'has_complete_metadata']
+2025-10-14 01:31:49,050 - INFO - Loading data to: Projects/spotify_data/ETL/spotify_streaming_data_2023-2024_5.csv
+2025-10-14 01:31:49,365 - INFO - Successfully saved 16,015 records to Projects/spotify_data/ETL/spotify_streaming_data_2023-2024_5.csv
+2025-10-14 01:31:49,374 - INFO - ETL Pipeline completed successfully!
+2025-10-14 01:31:49,375 - INFO - Processed 16,015 records in 0.81 seconds
+2025-10-14 01:31:49,376 - INFO - Data quality rate: 100.0%
+2025-10-14 01:31:49,377 - INFO - Total listening time: 493.8 hours
+2025-10-14 01:32:05,612 - INFO - Starting Spotify ETL Pipeline...
+2025-10-14 01:32:05,612 - INFO - Extracting data from: Spotify Extended Streaming History/Streaming_History_Audio_2024_6.json
+2025-10-14 01:32:05,889 - INFO - Successfully extracted 16,111 records
+2025-10-14 01:32:05,890 - INFO - Columns found: ['ts', 'platform', 'ms_played', 'conn_country', 'ip_addr', 'master_metadata_track_name', 'master_metadata_album_artist_name', 'master_metadata_album_album_name', 'spotify_track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'reason_start', 'reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode']
+2025-10-14 01:32:05,890 - INFO - Starting data transformation...
+2025-10-14 01:32:05,895 - INFO - Converted ms_played to minutes_played
+2025-10-14 01:32:05,904 - INFO - Renamed 10 columns
+2025-10-14 01:32:05,952 - INFO - Added datetime features
+2025-10-14 01:32:05,959 - INFO - Added listening duration categories
+2025-10-14 01:32:06,001 - INFO - Transformation complete. Final shape: (16111, 29)
+2025-10-14 01:32:06,001 - INFO - Columns: ['timestamp', 'platform', 'milliseconds_played', 'country_code', 'ip_address', 'track_name', 'artist_name', 'album_name', 'track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'play_reason_start', 'play_reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode', 'minutes_played', 'date', 'hour', 'day_of_week', 'listening_category', 'has_complete_metadata']
+2025-10-14 01:32:06,002 - INFO - Loading data to: Projects/spotify_data/ETL/spotify_streaming_data_2024_6.csv
+2025-10-14 01:32:06,375 - INFO - Successfully saved 16,111 records to Projects/spotify_data/ETL/spotify_streaming_data_2024_6.csv
+2025-10-14 01:32:06,388 - INFO - ETL Pipeline completed successfully!
+2025-10-14 01:32:06,389 - INFO - Processed 16,111 records in 0.76 seconds
+2025-10-14 01:32:06,389 - INFO - Data quality rate: 100.0%
+2025-10-14 01:32:06,390 - INFO - Total listening time: 335.3 hours
+2025-10-14 01:32:12,750 - INFO - Starting Spotify ETL Pipeline...
+2025-10-14 01:32:12,751 - INFO - Extracting data from: Spotify Extended Streaming History/Streaming_History_Audio_2024_7.json
+2025-10-14 01:32:13,128 - INFO - Successfully extracted 15,933 records
+2025-10-14 01:32:13,129 - INFO - Columns found: ['ts', 'platform', 'ms_played', 'conn_country', 'ip_addr', 'master_metadata_track_name', 'master_metadata_album_artist_name', 'master_metadata_album_album_name', 'spotify_track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'reason_start', 'reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode']
+2025-10-14 01:32:13,129 - INFO - Starting data transformation...
+2025-10-14 01:32:13,136 - INFO - Converted ms_played to minutes_played
+2025-10-14 01:32:13,147 - INFO - Renamed 10 columns
+2025-10-14 01:32:13,198 - INFO - Added datetime features
+2025-10-14 01:32:13,204 - INFO - Added listening duration categories
+2025-10-14 01:32:13,262 - INFO - Transformation complete. Final shape: (15933, 29)
+2025-10-14 01:32:13,263 - INFO - Columns: ['timestamp', 'platform', 'milliseconds_played', 'country_code', 'ip_address', 'track_name', 'artist_name', 'album_name', 'track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'play_reason_start', 'play_reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode', 'minutes_played', 'date', 'hour', 'day_of_week', 'listening_category', 'has_complete_metadata']
+2025-10-14 01:32:13,263 - INFO - Loading data to: Projects/spotify_data/ETL/spotify_streaming_data_2024_7.csv
+2025-10-14 01:32:13,711 - INFO - Successfully saved 15,933 records to Projects/spotify_data/ETL/spotify_streaming_data_2024_7.csv
+2025-10-14 01:32:13,719 - INFO - ETL Pipeline completed successfully!
+2025-10-14 01:32:13,719 - INFO - Processed 15,933 records in 0.96 seconds
+2025-10-14 01:32:13,719 - INFO - Data quality rate: 100.0%
+2025-10-14 01:32:13,720 - INFO - Total listening time: 309.0 hours
+2025-10-14 01:32:23,810 - INFO - Starting Spotify ETL Pipeline...
+2025-10-14 01:32:23,811 - INFO - Extracting data from: Spotify Extended Streaming History/Streaming_History_Audio_2024_8.json
+2025-10-14 01:32:24,221 - INFO - Successfully extracted 15,817 records
+2025-10-14 01:32:24,221 - INFO - Columns found: ['ts', 'platform', 'ms_played', 'conn_country', 'ip_addr', 'master_metadata_track_name', 'master_metadata_album_artist_name', 'master_metadata_album_album_name', 'spotify_track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'reason_start', 'reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode']
+2025-10-14 01:32:24,222 - INFO - Starting data transformation...
+2025-10-14 01:32:24,227 - INFO - Converted ms_played to minutes_played
+2025-10-14 01:32:24,236 - INFO - Renamed 10 columns
+2025-10-14 01:32:24,288 - INFO - Added datetime features
+2025-10-14 01:32:24,294 - INFO - Added listening duration categories
+2025-10-14 01:32:24,344 - INFO - Transformation complete. Final shape: (15817, 29)
+2025-10-14 01:32:24,345 - INFO - Columns: ['timestamp', 'platform', 'milliseconds_played', 'country_code', 'ip_address', 'track_name', 'artist_name', 'album_name', 'track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'play_reason_start', 'play_reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode', 'minutes_played', 'date', 'hour', 'day_of_week', 'listening_category', 'has_complete_metadata']
+2025-10-14 01:32:24,345 - INFO - Loading data to: Projects/spotify_data/ETL/spotify_streaming_data_2024_8.csv
+2025-10-14 01:32:24,798 - INFO - Successfully saved 15,817 records to Projects/spotify_data/ETL/spotify_streaming_data_2024_8.csv
+2025-10-14 01:32:24,812 - INFO - ETL Pipeline completed successfully!
+2025-10-14 01:32:24,813 - INFO - Processed 15,817 records in 0.99 seconds
+2025-10-14 01:32:24,814 - INFO - Data quality rate: 100.0%
+2025-10-14 01:32:24,814 - INFO - Total listening time: 373.7 hours
+2025-10-14 01:32:52,708 - INFO - Starting Spotify ETL Pipeline...
+2025-10-14 01:32:52,709 - INFO - Extracting data from: Spotify Extended Streaming History/Streaming_History_Audio_2024-2025_9.json
+2025-10-14 01:32:53,106 - INFO - Successfully extracted 15,925 records
+2025-10-14 01:32:53,107 - INFO - Columns found: ['ts', 'platform', 'ms_played', 'conn_country', 'ip_addr', 'master_metadata_track_name', 'master_metadata_album_artist_name', 'master_metadata_album_album_name', 'spotify_track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'reason_start', 'reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode']
+2025-10-14 01:32:53,108 - INFO - Starting data transformation...
+2025-10-14 01:32:53,117 - INFO - Converted ms_played to minutes_played
+2025-10-14 01:32:53,132 - INFO - Renamed 10 columns
+2025-10-14 01:32:53,205 - INFO - Added datetime features
+2025-10-14 01:32:53,215 - INFO - Added listening duration categories
+2025-10-14 01:32:53,289 - INFO - Transformation complete. Final shape: (15925, 29)
+2025-10-14 01:32:53,290 - INFO - Columns: ['timestamp', 'platform', 'milliseconds_played', 'country_code', 'ip_address', 'track_name', 'artist_name', 'album_name', 'track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'play_reason_start', 'play_reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode', 'minutes_played', 'date', 'hour', 'day_of_week', 'listening_category', 'has_complete_metadata']
+2025-10-14 01:32:53,291 - INFO - Loading data to: Projects/spotify_data/ETL/spotify_streaming_data_2024-2025_9.csv
+2025-10-14 01:32:53,732 - INFO - Successfully saved 15,925 records to Projects/spotify_data/ETL/spotify_streaming_data_2024-2025_9.csv
+2025-10-14 01:32:53,746 - INFO - ETL Pipeline completed successfully!
+2025-10-14 01:32:53,747 - INFO - Processed 15,925 records in 1.02 seconds
+2025-10-14 01:32:53,748 - INFO - Data quality rate: 100.0%
+2025-10-14 01:32:53,748 - INFO - Total listening time: 344.9 hours
+2025-10-14 01:33:22,874 - INFO - Starting Spotify ETL Pipeline...
+2025-10-14 01:33:22,875 - INFO - Extracting data from: Spotify Extended Streaming History/Streaming_History_Audio_2025_10.json
+2025-10-14 01:33:23,186 - INFO - Successfully extracted 15,970 records
+2025-10-14 01:33:23,187 - INFO - Columns found: ['ts', 'platform', 'ms_played', 'conn_country', 'ip_addr', 'master_metadata_track_name', 'master_metadata_album_artist_name', 'master_metadata_album_album_name', 'spotify_track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'reason_start', 'reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode']
+2025-10-14 01:33:23,188 - INFO - Starting data transformation...
+2025-10-14 01:33:23,193 - INFO - Converted ms_played to minutes_played
+2025-10-14 01:33:23,201 - INFO - Renamed 10 columns
+2025-10-14 01:33:23,236 - INFO - Added datetime features
+2025-10-14 01:33:23,241 - INFO - Added listening duration categories
+2025-10-14 01:33:23,279 - INFO - Transformation complete. Final shape: (15970, 29)
+2025-10-14 01:33:23,280 - INFO - Columns: ['timestamp', 'platform', 'milliseconds_played', 'country_code', 'ip_address', 'track_name', 'artist_name', 'album_name', 'track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'play_reason_start', 'play_reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode', 'minutes_played', 'date', 'hour', 'day_of_week', 'listening_category', 'has_complete_metadata']
+2025-10-14 01:33:23,280 - INFO - Loading data to: Projects/spotify_data/ETL/spotify_streaming_data_2025_10.csv
+2025-10-14 01:33:23,572 - INFO - Successfully saved 15,970 records to Projects/spotify_data/ETL/spotify_streaming_data_2025_10.csv
+2025-10-14 01:33:23,581 - INFO - ETL Pipeline completed successfully!
+2025-10-14 01:33:23,581 - INFO - Processed 15,970 records in 0.70 seconds
+2025-10-14 01:33:23,582 - INFO - Data quality rate: 100.0%
+2025-10-14 01:33:23,582 - INFO - Total listening time: 357.8 hours
+2025-10-14 01:33:38,245 - INFO - Starting Spotify ETL Pipeline...
+2025-10-14 01:33:38,246 - INFO - Extracting data from: Spotify Extended Streaming History/Streaming_History_Audio_2025_11.json
+2025-10-14 01:33:38,557 - INFO - Successfully extracted 16,019 records
+2025-10-14 01:33:38,558 - INFO - Columns found: ['ts', 'platform', 'ms_played', 'conn_country', 'ip_addr', 'master_metadata_track_name', 'master_metadata_album_artist_name', 'master_metadata_album_album_name', 'spotify_track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'reason_start', 'reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode']
+2025-10-14 01:33:38,558 - INFO - Starting data transformation...
+2025-10-14 01:33:38,563 - INFO - Converted ms_played to minutes_played
+2025-10-14 01:33:38,572 - INFO - Renamed 10 columns
+2025-10-14 01:33:38,611 - INFO - Added datetime features
+2025-10-14 01:33:38,616 - INFO - Added listening duration categories
+2025-10-14 01:33:38,658 - INFO - Transformation complete. Final shape: (16019, 29)
+2025-10-14 01:33:38,658 - INFO - Columns: ['timestamp', 'platform', 'milliseconds_played', 'country_code', 'ip_address', 'track_name', 'artist_name', 'album_name', 'track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'play_reason_start', 'play_reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode', 'minutes_played', 'date', 'hour', 'day_of_week', 'listening_category', 'has_complete_metadata']
+2025-10-14 01:33:38,660 - INFO - Loading data to: Projects/spotify_data/ETL/spotify_streaming_data_2025_11.csv
+2025-10-14 01:33:38,965 - INFO - Successfully saved 16,019 records to Projects/spotify_data/ETL/spotify_streaming_data_2025_11.csv
+2025-10-14 01:33:38,980 - INFO - ETL Pipeline completed successfully!
+2025-10-14 01:33:38,981 - INFO - Processed 16,019 records in 0.72 seconds
+2025-10-14 01:33:38,982 - INFO - Data quality rate: 100.0%
+2025-10-14 01:33:38,982 - INFO - Total listening time: 380.4 hours
+2025-10-14 01:33:51,329 - INFO - Starting Spotify ETL Pipeline...
+2025-10-14 01:33:51,330 - INFO - Extracting data from: Spotify Extended Streaming History/Streaming_History_Audio_2025_12.json
+2025-10-14 01:33:51,577 - INFO - Successfully extracted 4,322 records
+2025-10-14 01:33:51,578 - INFO - Columns found: ['ts', 'platform', 'ms_played', 'conn_country', 'ip_addr', 'master_metadata_track_name', 'master_metadata_album_artist_name', 'master_metadata_album_album_name', 'spotify_track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'reason_start', 'reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode']
+2025-10-14 01:33:51,579 - INFO - Starting data transformation...
+2025-10-14 01:33:51,583 - INFO - Converted ms_played to minutes_played
+2025-10-14 01:33:51,589 - INFO - Renamed 10 columns
+2025-10-14 01:33:51,619 - INFO - Added datetime features
+2025-10-14 01:33:51,623 - INFO - Added listening duration categories
+2025-10-14 01:33:51,644 - INFO - Transformation complete. Final shape: (4322, 29)
+2025-10-14 01:33:51,645 - INFO - Columns: ['timestamp', 'platform', 'milliseconds_played', 'country_code', 'ip_address', 'track_name', 'artist_name', 'album_name', 'track_uri', 'episode_name', 'episode_show_name', 'spotify_episode_uri', 'audiobook_title', 'audiobook_uri', 'audiobook_chapter_uri', 'audiobook_chapter_title', 'play_reason_start', 'play_reason_end', 'shuffle', 'skipped', 'offline', 'offline_timestamp', 'incognito_mode', 'minutes_played', 'date', 'hour', 'day_of_week', 'listening_category', 'has_complete_metadata']
+2025-10-14 01:33:51,645 - INFO - Loading data to: Projects/spotify_data/ETL/spotify_streaming_data_2025_12.csv
+2025-10-14 01:33:51,765 - INFO - Successfully saved 4,322 records to Projects/spotify_data/ETL/spotify_streaming_data_2025_12.csv
+2025-10-14 01:33:51,770 - INFO - ETL Pipeline completed successfully!
+2025-10-14 01:33:51,770 - INFO - Processed 4,322 records in 0.44 seconds
+2025-10-14 01:33:51,770 - INFO - Data quality rate: 100.0%
+2025-10-14 01:33:51,771 - INFO - Total listening time: 101.3 hours
